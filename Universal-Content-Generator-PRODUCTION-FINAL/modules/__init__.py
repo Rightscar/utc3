@@ -20,14 +20,10 @@ __author__ = "Universal AI Training Data Creator"
 # Import key classes for easy access
 try:
     from .enhanced_universal_extractor import EnhancedUniversalExtractor
-    from .dynamic_prompt_engine import DynamicPromptEngine
-    from .manual_review import ManualReviewInterface
     from .smart_content_detector import SmartContentDetector
     
     __all__ = [
         'EnhancedUniversalExtractor',
-        'DynamicPromptEngine',
-        'ManualReviewInterface',
         'SmartContentDetector'
     ]
     

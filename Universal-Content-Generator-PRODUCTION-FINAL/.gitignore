@@ -102,6 +102,8 @@ celerybeat.pid
 
 # Environments
 .env
+.env.local
+.env.*.local
 .venv
 env/
 venv/
@@ -138,9 +140,11 @@ cython_debug/
 
 # VS Code
 .vscode/
+*.code-workspace
 
 # Streamlit
 .streamlit/secrets.toml
+.streamlit/credentials.toml
 
 # Model files and caches
 models/
@@ -165,6 +169,7 @@ logs/
 tmp/
 temp/
 .tmp/
+*.tmp
 
 # OS generated files
 .DS_Store
@@ -190,6 +195,9 @@ monitoring/
 secrets/
 keys/
 certificates/
+*.pem
+*.key
+*.crt
 
 # Docker
 .dockerignore
@@ -227,4 +235,25 @@ settings.local.py
 *.bin
 *.dat
 *.dump
+
+# API Keys and Secrets
+*api_key*
+*secret*
+*token*
+*credential*
+
+# Session files
+*.session
+*.cookie
+
+# Database dumps
+*.sql
+*.sqlite
+
+# Node modules (if any JS dependencies)
+node_modules/
+
+# Package lock files
+package-lock.json
+yarn.lock
 
